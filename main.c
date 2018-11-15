@@ -24,7 +24,7 @@ void TIM3_Init();
 void TIM1_Init();
 void DMA_Init();
 float computeDistance(void);  /*call after calling getReadings
-							   *and checking that captureDone flag is set*/
+				 *and checking that captureDone flag is set*/
 void  getReadings(void);      /*Starts both timers and gets the readings */
 
 UART_HandleTypeDef huart2;
@@ -33,7 +33,7 @@ DMA_HandleTypeDef hdma_tim3_IC;
 
 volatile uint16_t captures[] = { 0, 0 };
 volatile uint8_t captureDone = 0, secondValueUpdated = 0; /* when captureDone is set,
-														  computeDistance can be called */
+							computeDistance can be called */
 
 
 int main(void) {
