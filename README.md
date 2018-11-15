@@ -2,7 +2,7 @@
 Driver for an HC-SR04 ultrasonic distance sensor for ARM-STM32 microcontroller (nucleo) using CubeHAL
 
 
-/*
+
  * Driver for HC-SR04 ultrasonic distance sensor
  * for STM32-F401RE ARM Processor.
  * To get a reading from the sensor the Trig pin must be held high for 10us
@@ -14,4 +14,4 @@ Driver for an HC-SR04 ultrasonic distance sensor for ARM-STM32 microcontroller (
  * to fire only once (each time getReading() is called).
  * Uses pins D8 and D12 on nucleo (Arduino headers)
  * Take measurements at least 60ms apart.
- */
+ 
